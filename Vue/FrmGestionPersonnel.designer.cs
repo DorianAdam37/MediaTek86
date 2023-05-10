@@ -1,5 +1,5 @@
 ﻿
-namespace Mediatek.Vue
+namespace MediaTek86.Vue
 {
     partial class frmGestionPersonnel
     {
@@ -90,6 +90,7 @@ namespace Mediatek.Vue
             this.btnAbsences.TabIndex = 34;
             this.btnAbsences.Text = "Gérer les absences";
             this.btnAbsences.UseVisualStyleBackColor = false;
+            this.btnAbsences.Click += new System.EventHandler(this.btnAbsences_Click);
             // 
             // btnVider
             // 
@@ -102,6 +103,7 @@ namespace Mediatek.Vue
             this.btnVider.TabIndex = 33;
             this.btnVider.Text = "Réinitialiser";
             this.btnVider.UseVisualStyleBackColor = false;
+            this.btnVider.Click += new System.EventHandler(this.btnVider_Click);
             // 
             // btnModifier
             // 
@@ -114,6 +116,7 @@ namespace Mediatek.Vue
             this.btnModifier.TabIndex = 32;
             this.btnModifier.Text = "Modifier";
             this.btnModifier.UseVisualStyleBackColor = false;
+            this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click);
             // 
             // btnSupprimerAbs
             // 
@@ -126,6 +129,7 @@ namespace Mediatek.Vue
             this.btnSupprimerAbs.TabIndex = 31;
             this.btnSupprimerAbs.Text = "Supprimer";
             this.btnSupprimerAbs.UseVisualStyleBackColor = false;
+            this.btnSupprimerAbs.Click += new System.EventHandler(this.btnSupprimer_Click);
             // 
             // btnAjouter
             // 
@@ -138,6 +142,7 @@ namespace Mediatek.Vue
             this.btnAjouter.TabIndex = 30;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = false;
+            this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
             // 
             // lblPersonnel
             // 
@@ -260,6 +265,7 @@ namespace Mediatek.Vue
             this.dgvPersonnel.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvPersonnel.Size = new System.Drawing.Size(622, 284);
             this.dgvPersonnel.TabIndex = 60;
+            this.dgvPersonnel.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPersonnels_CellEnter);
             // 
             // lblGestion
             // 
