@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,13 +10,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MediaTek86
+namespace Mediatek.Vue
 {
-    public partial class Form1 : Form
+    /// <summary>
+    /// Fonctionnalités de la fenêtre de gestion des absences
+    /// </summary>
+    public partial class frmGestionAbsences : Form
     {
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        
     }
 }
