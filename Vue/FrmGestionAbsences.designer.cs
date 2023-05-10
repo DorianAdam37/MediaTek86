@@ -1,5 +1,5 @@
 ﻿
-namespace Mediatek.Vue
+namespace MediaTek86.Vue
 {
     partial class frmGestionAbsences
     {
@@ -60,6 +60,7 @@ namespace Mediatek.Vue
             this.dgvAbsences.Name = "dgvAbsences";
             this.dgvAbsences.Size = new System.Drawing.Size(361, 266);
             this.dgvAbsences.TabIndex = 0;
+            this.dgvAbsences.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAbsences_CellEnter);
             // 
             // lblListeAbsences
             // 
@@ -165,6 +166,7 @@ namespace Mediatek.Vue
             this.btnAjouterAbs.TabIndex = 10;
             this.btnAjouterAbs.Text = "Ajouter";
             this.btnAjouterAbs.UseVisualStyleBackColor = false;
+            this.btnAjouterAbs.Click += new System.EventHandler(this.btnAjouterAbs_Click);
             // 
             // btnSupprimerAbs
             // 
@@ -177,6 +179,7 @@ namespace Mediatek.Vue
             this.btnSupprimerAbs.TabIndex = 11;
             this.btnSupprimerAbs.Text = "Supprimer";
             this.btnSupprimerAbs.UseVisualStyleBackColor = false;
+            this.btnSupprimerAbs.Click += new System.EventHandler(this.btnSupprimerAbs_Click);
             // 
             // btnModifierAbs
             // 
@@ -189,6 +192,7 @@ namespace Mediatek.Vue
             this.btnModifierAbs.TabIndex = 12;
             this.btnModifierAbs.Text = "Modifier";
             this.btnModifierAbs.UseVisualStyleBackColor = false;
+            this.btnModifierAbs.Click += new System.EventHandler(this.btnModifierAbs_Click);
             // 
             // btnVider
             // 
@@ -201,6 +205,7 @@ namespace Mediatek.Vue
             this.btnVider.TabIndex = 13;
             this.btnVider.Text = "Réinitialiser";
             this.btnVider.UseVisualStyleBackColor = false;
+            this.btnVider.Click += new System.EventHandler(this.btnVider_Click);
             // 
             // btnRetour
             // 
@@ -213,6 +218,7 @@ namespace Mediatek.Vue
             this.btnRetour.TabIndex = 14;
             this.btnRetour.Text = "Retour";
             this.btnRetour.UseVisualStyleBackColor = false;
+            this.btnRetour.Click += new System.EventHandler(this.btnRetour_Click);
             // 
             // dtpDebut
             // 

@@ -1,5 +1,5 @@
 ﻿
-namespace Mediatek.Vue
+namespace MediaTek86.Vue
 {
     partial class frmAuthentification
     {
@@ -85,6 +85,7 @@ namespace Mediatek.Vue
             this.chkPassword.TabIndex = 4;
             this.chkPassword.Text = "Afficher le mot de passe";
             this.chkPassword.UseVisualStyleBackColor = false;
+            this.chkPassword.CheckedChanged += new System.EventHandler(this.chkPassword_CheckedChanged);
             // 
             // btnConnexion
             // 
@@ -96,6 +97,7 @@ namespace Mediatek.Vue
             this.btnConnexion.TabIndex = 5;
             this.btnConnexion.Text = "Connexion";
             this.btnConnexion.UseVisualStyleBackColor = false;
+            this.btnConnexion.Click += new System.EventHandler(this.btnConnexion_Click);
             // 
             // frmAuthentification
             // 
